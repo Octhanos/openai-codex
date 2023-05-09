@@ -133,7 +133,7 @@ const handleSubmit = async (e) => {
 
 }
 
-form.addEventListener('submit', handleSubmit(e));
+form.addEventListener('submit', (e) => handleSubmit(e));
 form.addEventListener('keyup', (e) => {
   if(e.keyCode === 13) {
     handleSubmit(e);
