@@ -11,9 +11,87 @@ body {
   background: #343541;
 }
 
+.navbar {
+  height: 10vh;
+  color: white;
+  background: #292a33;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.logo-wrapper:hover {
+  cursor: pointer;
+}
+
+.logo-wrapper img {
+  position: relative;
+  height: 100%;
+}
+
+.tutorial-button {
+  color: white;
+  border: solid black 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+.tutorial-button:hover {
+  background-color: black;
+  box-shadow: none;
+}
+
+.input-wrapper{
+  position: relative;
+  width: 30%;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-wrapper button {
+  color: white;
+}
+
+.input-wrapper input {
+  position: relative;
+  height: 100%;
+  width: 70%;
+  border: solid black 2px;
+  background-color: #343541;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.input-wrapper input:active {
+  border: none;
+}
+
+.input-wrapper button {
+  color: white;
+  border: solid black 2px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+.input-wrapper button:hover {
+  background-color: black;
+  box-shadow: none;
+}
+
 #app {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   background: #343541;
 
   display: flex;
