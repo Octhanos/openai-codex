@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codex - Your Coding AI</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="navbar">
+        <a class="logo-wrapper" href="https://octhanos.github.io/octavio-portfolio/" target="_blank">
+          <img src="./assets/logo-octavio.png"/>
+        </a>
+        <a class="tutorial-button" href="./tutorial.html" target="_blank">
+          Tutorial API Key
+        </a>
+      <div class="input-wrapper">
+        <input type="text" id="apikey-input">
+        <button id="apikey-btn">Enter API Key</button>
+      </div>
+    </div>
+    <div id="app">
+      <div id="chat_container"></div>
+
+      <form >
+        <textarea name="prompt" placeholder="Ask Codex..." cols="1" rows="1"></textarea>
+        <button type="submit"><img src="./assets/send.svg"/></button>
+      </form>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
