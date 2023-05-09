@@ -8,7 +8,7 @@ let loadInterval;
 
 document.addEventListener('DOMContentLoaded', async (event) => {
 
-  let consultApiKey = await fetch('http://localhost:5000/consultApiKey');
+  let consultApiKey = await fetch('https://openai-codex-twpe.onrender.com/consultApiKey');
 
   consultApiKey = await consultApiKey.json()
 
@@ -20,7 +20,7 @@ document.querySelector('#apikey-btn').addEventListener('click', async (event) =>
   
   const value = document.querySelector('#apikey-input').value
 
-  let updateApiKey = await fetch('http://localhost:5000/updateApiKey',{
+  let updateApiKey = await fetch('https://openai-codex-twpe.onrender.com/updateApiKey',{
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -105,7 +105,7 @@ const handleSubmit = async (e) => {
 
   loader(messageDiv);
 
-  let response = await fetch('http://localhost:5000', {
+  let response = await fetch('https://openai-codex-twpe.onrender.com', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
